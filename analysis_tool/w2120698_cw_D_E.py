@@ -5,7 +5,7 @@ import csv
 # import task abc as a module 
 # and error handling if module not found
 try:
-    from w2120698_cw_A_B_C import process_csv_data,validate_continue_input
+    from functions import process_csv_data,validate_continue_input
 except ImportError as e:
     print("Error importing module. check the module is available and correctly named.")
     raise e
@@ -335,7 +335,7 @@ class MultiCSVProcessor:
         """
         # import module and error handling if module not found
         try:
-            from w2120698_cw_A_B_C import validate_date_input, display_outcomes, save_results_to_file
+            from functions import validate_date_input, display_outcomes, save_results_to_file
         except ImportError as e:
             print("Error importing module. check the module is available and correctly named")
             raise e
